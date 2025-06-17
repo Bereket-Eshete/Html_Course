@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Bereket Eshete" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create as I learn HTML."
+    />
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Goal for the year</h1>
+      <nav aria-label="primary-naviagtion">
+        <ul>
+          <li><a href="#html">Learning Html</a></li>
+          <li><a href="#vacation">Vacation</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <article id="html">
+        <h2>I'm Ready to Learn HTML</h2>
+        <p>This is my first web page.</p>
+        <figure>
+          <img
+            src="assets/alice-triquet-HeEJU3nrg_0-unsplash.jpg"
+            alt="robot-image"
+            title="I am learning HTML5"
+            width="300"
+            height="500"
+          />
+          <figcaption>image of person who wear a suit</figcaption>
+        </figure>
+        <figure>
+          <figcaption>Example of Html5 code</figcaption>
+          <p>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+          </p>
+        </figure>
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how:</p>
+        <ol>
+          <li>I learn more about web dev.</li>
+          <li>I plan out my schedule.</li>
+          <li>I use resources from</li>
+          <abbr title="Mozilla Developer Network"
+            ><a href="https://developer.mozilla.org/">MDN</a></abbr
+          >.
+        </ol>
+        <aside>
+          <details>
+            <summary>
+              Guess the <mark>number of hours</mark> I code per day
+            </summary>
+            <p>
+              I start at <time datetime="08:00">8 am</time> and I write code for
+              <time datetime="">3 hours</time> every morning
+            </p>
+          </details>
+        </aside>
+        <br />
+        <table>
+          <caption>
+            My Daily Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th>Time</th>
+              <th>Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00"
+                  >11am</time
+                >
+              </td>
+              <td>write code</td>
+            </tr>
+            <tr>
+              <th>Break</th>
+              <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00"
+                  >12pm</time
+                >
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+            <tr>
+              <th>After nonun</th>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                  >5pm</time
+                >
+              </td>
+              <td>Study for Other Courses</td>
+            </tr>
+            <tr>
+              <td rowspan="2">All Other time</td>
+              <td>Free Time</td>
+            </tr>
+            <tr>
+              <th>night</th>
+              <td>sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                And that is what i do every day 5 days a week just eat,
+                sleep,code .... and recharge
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <hr />
+      <article id="Vacation">
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a getaway</em>.</p>
+        <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+        <section>
+          <h3>Place I'd Like to Visit</h3>
+          <figure>
+            <img
+              src="assets/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg"
+              alt="vacation picture"
+              loading="lazy"
+              title="It is 5 o'clock somewhere!"
+              width="400"
+              height="450"
+            />
+            <figcaption>A caribbean Vacation image</figcaption>
+          </figure>
+
+          <ul>
+            <li><p>I've heard good things about the Caribbean.</p></li>
+            <li><p>I've heard good things about going here:</p></li>
+            <li>
+              <address>
+                Margaritaville Island Reserve Riviera Cancún<br />
+                Bahia Petempich Puerto Morelos, Mexico<br />
+                Colonia Morelos, México 77580
+              </address>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Place I Want to Avoid</h3>
+          <dl>
+            <dt>Nort Pole</dt>
+            <dd>I hear this <strong>cold</strong></dd>
+            <dt>South pole</dt>
+            <dd>This is also cold</dd>
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+          </dl>
+        </section>
+      </article>
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I really like to here from you</p>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>personal Info</legend>
+            <p>
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Jone"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Doe"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="*******"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="0953386120"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+            </p>
+            <p>
+              <label for="decade">decade:</label>
+              <input
+                type="number"
+                id="decade"
+                name="decade"
+                min="1950"
+                max="2020"
+                step="10"
+                value="1980"
+              />
+            </p>
+            <p>
+              <label for="coffee">Favorite Coffee</label>
+              <select name="coffee" id="coffee" multiple size="2">
+                <optgroup label="coffees">
+                  <option value="regular">RegularCoffee</option>
+                  <option value="iced">Iced coffee</option>
+                </optgroup>
+                <optgroup label="cappuccino">
+                  <option value="latte">Latte</option>
+                </optgroup>
+              </select>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What is your favorite food</legend>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">other</label>
+            </p>
+          </fieldset>
+          <br />
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog" />
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat" />
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="Fish" value="Fish" />
+            <label for="fish">Fish</label>
+          </p>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Bereket Eshete</a> &gt;&gt;&gt;
+      </p>
+      <p><a href="#">Back to Top</a></p>
+    </footer>
+  </body>
+</html>
